@@ -1,12 +1,12 @@
-public class unit{
+public class egyseg{
     int atk;
     int def;
-    public unit(int atk, int def)
+    public egyseg(int atk, int def)
     {
         atk=atk;
         def=def;
     }
-    public boolean isAlive(unit focus)
+    public boolean isAlive(egyseg focus)
     {
         if(focus.def>0)
         {
@@ -14,9 +14,10 @@ public class unit{
         }
         else{return true;}
     }
-    public attack(unti attacker, unit deffender){
+    public  egyseg attack(egyseg attacker, egyseg deffender){
             if(isAlive(deffender)==true){
             deffender.def-=attacker.atk;}
-            else{system.out.println("It's already dead")}
+            else{System.out.println("It's already dead")}
+        return deffender;
     }
 }
