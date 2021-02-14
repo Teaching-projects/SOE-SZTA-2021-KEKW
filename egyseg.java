@@ -3,8 +3,8 @@ public class egyseg{
     int def;
     public egyseg(int atk, int def)
     {
-        atk=atk;
-        def=def;
+        this.atk=atk;
+        this.def=def;
     }
     public boolean isAlive(egyseg focus)
     {
