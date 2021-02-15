@@ -18,8 +18,7 @@ public class Unit{
         int defenderHp = defender.getHealth();
         int myAttack = getAtk();
         int newHp = defenderHp - myAttack;
-        
-        defender.setHealth(newHp);
+        defender.hp=newHp;
     }
 
     public int getHealth(){
@@ -33,9 +32,5 @@ public class Unit{
         else{
             return 0;
         }
-    }
-
-    private void setHealth(int hp) {
-        this.hp = hp;
     }
 }

@@ -22,10 +22,6 @@ class Main{
             i++;
         }
         String winner = Knight1.isAlive(Knight1) ? "Knight1 nyert" : "Knight2 nyert";
-        System.out.println(winner);
-        System.out.println(Knight1.getHealth());
-        System.out.println(Knight2.getHealth());
-
-        
+        System.out.println(winner);        
     }
 }
