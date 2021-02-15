@@ -27,7 +27,12 @@ public class Unit{
     }
     
     public int getAtk(){
+        if(this.isAlive(this)==true){
         return atk;
+        }
+        else{
+            return 0;
+        }
     }
 
     private void setHealth(int hp) {
