@@ -1,4 +1,4 @@
-public class Main{
+class Main{
     
     public static void main(String[] args) {
         Unit Knight1 = new Unit(5,10);
