@@ -15,8 +15,8 @@ public class Unit{
     }
 
     public void attack(Unit defender){
- 
-        defender.hp=defender.getHealth()-getAtk();
+
+        defender.hp -= getAtk();
     }
 
     public int getHealth(){
