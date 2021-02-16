@@ -11,7 +11,7 @@ public class Unit{
 
     public boolean isAlive(Unit focus) //focus = akit épp vizsgálunk hogy él-e
     {    
-        return (focus.hp > 0) ?  true : false;
+        return (focus.hp > 0) ;
     }
 
     public void attack(Unit defender){
