@@ -1,3 +1,5 @@
+
+
 public class Unit{
    
     int atk;
@@ -24,11 +26,6 @@ public class Unit{
     }
     
     public int getAtk(){
-        if(this.isAlive()){
-        return atk;
-        }
-        else{
-            return 0;
-        }
+        return this.isAlive() ? atk : 0;
     }
 }
