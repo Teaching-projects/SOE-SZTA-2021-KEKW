@@ -9,9 +9,9 @@ public class Unit{
         this.hp=hp;
     }
 
-    public boolean isAlive(Unit focus) //focus = akit épp vizsgálunk hogy él-e
+    public boolean isAlive()
     {    
-        return (focus.hp > 0) ;
+        return (this.hp > 0) ;
     }
 
     public void attack(Unit defender){
@@ -24,7 +24,7 @@ public class Unit{
     }
     
     public int getAtk(){
-        if(this.isAlive(this)==true){
+        if(this.isAlive()){
         return atk;
         }
         else{
