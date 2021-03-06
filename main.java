@@ -11,8 +11,11 @@ class Main{
         System.out.println("Now hp");
         int Knight2HP=ReadLine();
 
-        Unit Knight1 = new Unit(Knight1ATK,Knight1HP);
-        Unit Knight2 = new Unit(Knight2ATK,Knight2HP);
+        int Knight1AttackSpeed = attackSpeedNumber();
+        int Knight2AttackSpeed = attackSpeedNumber();
+
+        Unit Knight1 = new Unit(Knight1ATK, Knight1HP, Knight1AttackSpeed);
+        Unit Knight2 = new Unit(Knight2ATK, Knight2HP, Knight2AttackSpeed);
 
         battle(Knight1, Knight2);
     }
@@ -22,11 +25,17 @@ class Main{
         while (Knight1.isAlive() && Knight2.isAlive()) {
             System.out.println(i + ". kör");
             
+            if(Knight1.isAlive() && Knight1.canHit())
+            {
             System.out.println(Knight1.getHealth() + "hp-ja van az első lovagnak, " + Knight1.getAtk() + " sebzést tud okozni");
             Knight1.attack(Knight2);
-            if(Knight2.isAlive()==true){
+            }
+            else if(Knight2.isAlive() && Knight2.canHit()){
             System.out.println(Knight2.getHealth() + "hp-ja van az második lovagnak, " + Knight2.getAtk() + " sebzést tud okozni");
             Knight2.attack(Knight1);
+            }
+            else{
+                System.out.println("Egyik lovag sem támadott ebben a körben");
             }
 
             i++;
@@ -36,5 +45,10 @@ class Main{
     }
     public static int ReadLine (){
         return Integer.parseInt(System.console().readLine());
+    }
+    
+    //F3/2 feladat
+    public static int attackSpeedNumber() {
+        return (int) ((Math.random() * (30 - 10)) + 10);
     }
 }
