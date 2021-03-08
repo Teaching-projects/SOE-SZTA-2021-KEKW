@@ -1,18 +1,20 @@
 class Main{
     
     public static void main(String[] args) {
+        
         System.out.println("Give attack for Knigh1");
         int Knight1ATK=ReadLine();
         System.out.println("Now hp");
         int Knight1HP=ReadLine();
+        System.out.println("Now an attack speed");
+        int Knight1AttackSpeed = ReadLine();
 
         System.out.println("Give attack for Knigh2");
         int Knight2ATK=ReadLine();
         System.out.println("Now hp");
         int Knight2HP=ReadLine();
-
-        int Knight1AttackSpeed = attackSpeedNumber();
-        int Knight2AttackSpeed = attackSpeedNumber();
+        System.out.println("Now an attack speed");
+        int Knight2AttackSpeed = ReadLine();
 
         Unit Knight1 = new Unit(Knight1ATK, Knight1HP, Knight1AttackSpeed);
         Unit Knight2 = new Unit(Knight2ATK, Knight2HP, Knight2AttackSpeed);
@@ -25,12 +27,12 @@ class Main{
         while (Knight1.isAlive() && Knight2.isAlive()) {
             System.out.println(i + ". kör");
             
-            if(Knight1.isAlive() && Knight1.canHit())
+            if(Knight1.isAlive() && Knight1.canHit(i))
             {
             System.out.println(Knight1.getHealth() + "hp-ja van az első lovagnak, " + Knight1.getAtk() + " sebzést tud okozni");
             Knight1.attack(Knight2);
             }
-            else if(Knight2.isAlive() && Knight2.canHit()){
+            else if(Knight2.isAlive() && Knight2.canHit(i)){
             System.out.println(Knight2.getHealth() + "hp-ja van az második lovagnak, " + Knight2.getAtk() + " sebzést tud okozni");
             Knight2.attack(Knight1);
             }
@@ -47,8 +49,4 @@ class Main{
         return Integer.parseInt(System.console().readLine());
     }
     
-    //F3/2 feladat
-    public static int attackSpeedNumber() {
-        return (int) ((Math.random() * (30 - 10)) + 10);
-    }
 }

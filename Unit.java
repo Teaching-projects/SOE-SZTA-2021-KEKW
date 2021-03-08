@@ -19,9 +19,12 @@ public class Unit{
     }
 
     //F3/2 feladathoz tartozó canHit
-    //ha a lovag páros számot kap, tud támadni
-    public boolean canHit(){
-        return (this.attackSpeed % 2 == 0);
+    //amikor a lovag olyan körbe ér ahol üthet, akkor üt (amikor a támadási értéke osztható maradék nélkül az i-vel)
+    public boolean canHit(int i){
+        if (i % attackSpeed == 0){
+            return true;
+        }
+        else return false;
     }
 
     public void attack(Unit defender){
