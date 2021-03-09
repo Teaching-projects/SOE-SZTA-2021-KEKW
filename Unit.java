@@ -2,11 +2,11 @@
 
 public class Unit{
    
-    int atk;
-    int hp;
-    int attackSpeed;
+    double atk;
+    double hp;
+    double attackSpeed;
 
-    public Unit(int atk, int hp, int attackSpeed)
+    public Unit(double atk, double hp, double attackSpeed)
     {
         this.atk=atk;
         this.hp=hp;
@@ -19,12 +19,9 @@ public class Unit{
     }
 
     //F3/2 feladathoz tartozó canHit
-    //amikor a lovag olyan körbe ér ahol üthet, akkor üt (amikor a támadási értéke osztható maradék nélkül az i-vel)
-    public boolean canHit(int i){
-        if (i % attackSpeed == 0){
-            return true;
-        }
-        else return false;
+    //amikor a lovag olyan körbe ér ahol üthet, akkor üt (amikor a támadási értéke osztható maradék nélkül a szamlaloval)
+    public boolean canHit(double szamlalo){
+        return (attackSpeed % szamlalo == 0);
     }
 
     public void attack(Unit defender){
@@ -32,11 +29,11 @@ public class Unit{
         defender.hp -= getAtk();
     }
 
-    public int getHealth(){
+    public double getHealth(){
         return hp;
     }
     
-    public int getAtk(){
+    public double getAtk(){
         return this.isAlive() ? atk : 0;
     }
 }
