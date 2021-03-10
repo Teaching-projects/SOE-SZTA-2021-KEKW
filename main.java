@@ -6,16 +6,16 @@ class Main{
     public static void main(String[] args) {
         
         System.out.println("Give attack for Knigh1");
-        int Knight1ATK = (int) Math.floor(ReadLine());
+        int Knight1ATK = (int) ReadLine();
         System.out.println("Now hp");
-        int Knight1HP = (int) Math.floor(ReadLine());
+        int Knight1HP = (int) ReadLine();
         System.out.println("Now an attack speed");
         double Knight1AttackSpeed = ReadLine();
 
         System.out.println("Give attack for Knigh2");
-        int Knight2ATK = (int) Math.floor(ReadLine());
+        int Knight2ATK = (int) ReadLine();
         System.out.println("Now hp");
-        int Knight2HP = (int) Math.floor(ReadLine());
+        int Knight2HP = (int) ReadLine();
         System.out.println("Now an attack speed");
         double Knight2AttackSpeed = ReadLine();
 
