@@ -6,16 +6,16 @@ class Main{
     public static void main(String[] args) {
         
         System.out.println("Give attack for Knigh1");
-        double Knight1ATK=ReadLine();
+        int Knight1ATK = (int) Math.floor(ReadLine());
         System.out.println("Now hp");
-        double Knight1HP=ReadLine();
+        int Knight1HP = (int) Math.floor(ReadLine());
         System.out.println("Now an attack speed");
         double Knight1AttackSpeed = ReadLine();
 
         System.out.println("Give attack for Knigh2");
-        double Knight2ATK=ReadLine();
+        int Knight2ATK = (int) Math.floor(ReadLine());
         System.out.println("Now hp");
-        double Knight2HP=ReadLine();
+        int Knight2HP = (int) Math.floor(ReadLine());
         System.out.println("Now an attack speed");
         double Knight2AttackSpeed = ReadLine();
 
@@ -26,7 +26,7 @@ class Main{
     }
 
     public static void battle(Unit Knight1, Unit Knight2) {
-        int i = 1;
+        int i = 1; //körök száma
         double szamlalo = 0.0;
 
         while (Knight1.isAlive() && Knight2.isAlive()) {

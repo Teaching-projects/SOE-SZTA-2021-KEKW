@@ -1,10 +1,10 @@
 public class Unit{
 
-    double atk;
-    double hp;
+    int atk;
+    int hp;
     double attackSpeed;
 
-    public Unit(double atk, double hp, double attackSpeed)
+    public Unit(int atk, int hp, double attackSpeed)
     {
         this.atk=atk;
         this.hp=hp;
