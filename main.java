@@ -1,5 +1,5 @@
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+//import org.json.simple.JSONArray;
+//import org.json.simple.JSONObject;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,7 +17,7 @@ class Main{
         System.out.println("Now hp");
         int Knight2HP=ReadLine();
 
-        Unit Knight1 = new Unit(Knight1ATK,Knight1HP);
+        Unit Knight1 = new Unit(Knight1ATK,Knight1HP); // FIGYELJ ERRE HOGY NINCS BEHÚZVA SEMMI
         Unit Knight2 = new Unit(Knight2ATK,Knight2HP);
 
         battle(Knight1, Knight2);
