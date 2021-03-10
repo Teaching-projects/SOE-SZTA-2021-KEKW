@@ -4,14 +4,12 @@ public class Unit{
    
     int atk;
     int hp;
-    double attackSpeed;
     String name;
     String lore;
 
-    public Unit(int atk, int hp, double attackSpeed, String name, String lore){
+    public Unit(int atk, int hp, String name, String lore){
         this.atk=atk;
         this.hp=hp;
-        this.attackSpeed = attackSpeed;
         this.name = name;
         this.lore = lore;
     }
