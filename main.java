@@ -48,12 +48,12 @@ class Main{
                 {
                     Knight1.attack(Knight2);
                     System.out.println("Knight1 megtámadja Knight2: " + Knight1.getAtk() + " sebzést okoz. " + Knight2.getHealth() + " élete marad Knight2-nek");
-                    Knight1.attackSpeed = Knight1.attackSpeed * 2;
+                    Knight1.attackSpeed += Knight1.attackSpeed;
                 }
                 else if(Knight2.isAlive() && Knight2.canHit(Knight2, szamlalo)){
                     Knight2.attack(Knight1);
                     System.out.println("Knight2 megtámadja Knight1: " + Knight2.getAtk() + " sebzést okoz. " + Knight1.getHealth() + " élete marad Knight1-nek");
-                    Knight2.attackSpeed = Knight2.attackSpeed * 2;
+                    Knight2.attackSpeed += Knight2.attackSpeed;
                 }
                 else{
                     System.out.println("Egyik lovag sem támadott ebben a körben");
