@@ -20,8 +20,8 @@ public class Unit{
 
     //F3/2 feladathoz tartozó canHit
     //amikor a lovag olyan körbe ér ahol üthet, akkor üt (amikor a támadási értéke osztható maradék nélkül a szamlaloval)
-    public boolean canHit(double szamlalo){
-        return (attackSpeed % szamlalo == 0);
+    public boolean canHit(Unit lovag, double szamlalo){
+        return (lovag.attackSpeed == szamlalo);
     }
 
     public void attack(Unit defender){
