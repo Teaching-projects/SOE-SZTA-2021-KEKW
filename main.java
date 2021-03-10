@@ -2,7 +2,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 class Main{
-    
+
     public static void main(String[] args) {
         
         System.out.println("Give attack for Knigh1");
@@ -10,14 +10,14 @@ class Main{
         System.out.println("Now hp");
         double Knight1HP=ReadLine();
         System.out.println("Now an attack speed");
-        double Knight1AttackSpeed = 0.7;
+        double Knight1AttackSpeed = ReadLine();
 
         System.out.println("Give attack for Knigh2");
         double Knight2ATK=ReadLine();
         System.out.println("Now hp");
         double Knight2HP=ReadLine();
         System.out.println("Now an attack speed");
-        double Knight2AttackSpeed = 0.5;
+        double Knight2AttackSpeed = ReadLine();
 
         Unit Knight1 = new Unit(Knight1ATK, Knight1HP, Knight1AttackSpeed);
         Unit Knight2 = new Unit(Knight2ATK, Knight2HP, Knight2AttackSpeed);
@@ -43,29 +43,24 @@ class Main{
             }
             else{
                 System.out.println(i + ". kör");
-                System.out.println(szamlalo + " szamlalo értéke a körben");
 
                 if(Knight1.isAlive() && Knight1.canHit(Knight1, szamlalo))
                 {
-                Knight1.attack(Knight2);
-                System.out.println("Knight1 megtámadja Knight2: " + Knight1.getAtk() + " sebzést okoz. " + Knight2.getHealth() + " élete marad Knight2-nek");
-                Knight1.attackSpeed = Knight1.attackSpeed * 2;
-                System.out.println(Knight1.attackSpeed + " KN1 attackspeed");
+                    Knight1.attack(Knight2);
+                    System.out.println("Knight1 megtámadja Knight2: " + Knight1.getAtk() + " sebzést okoz. " + Knight2.getHealth() + " élete marad Knight2-nek");
+                    Knight1.attackSpeed = Knight1.attackSpeed * 2;
                 }
                 else if(Knight2.isAlive() && Knight2.canHit(Knight2, szamlalo)){
-                Knight2.attack(Knight1);
-                System.out.println("Knight2 megtámadja Knight1: " + Knight2.getAtk() + " sebzést okoz. " + Knight1.getHealth() + " élete marad Knight1-nek");
-                Knight2.attackSpeed = Knight2.attackSpeed * 2;
-                System.out.println(Knight2.attackSpeed + " KN2 attackspeed");
+                    Knight2.attack(Knight1);
+                    System.out.println("Knight2 megtámadja Knight1: " + Knight2.getAtk() + " sebzést okoz. " + Knight1.getHealth() + " élete marad Knight1-nek");
+                    Knight2.attackSpeed = Knight2.attackSpeed * 2;
                 }
                 else{
-                System.out.println("Egyik lovag sem támadott ebben a körben");
-                System.out.println(Knight1.attackSpeed + " KN1 attackspeed");
-                System.out.println(Knight2.attackSpeed + " KN2 attackspeed");
+                    System.out.println("Egyik lovag sem támadott ebben a körben");
                 }
             }
             szamlalo += 0.1;
-            round(szamlalo, 2);
+            szamlalo = round(szamlalo, 2);
             i++;
         }
         String winner = Knight1.isAlive() ? "Knight1 nyert" : "Knight2 nyert";
@@ -82,5 +77,6 @@ class Main{
         bd = bd.setScale(places, RoundingMode.HALF_UP);
         return bd.doubleValue();
     }
+
     
 }
