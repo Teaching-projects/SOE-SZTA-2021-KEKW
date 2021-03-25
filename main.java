@@ -3,7 +3,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Scanner;
 
 class Main{
     
@@ -24,7 +23,7 @@ class Main{
         System.out.println("Now hp");
         int Knight2HP=ReadLine();
 
-        Unit Knight1 = new Unit(Knight1ATK,Knight1HP);
+        Unit Knight1 = new Unit(Knight1ATK,Knight1HP); // FIGYELJ ERRE HOGY NINCS BEHÚZVA SEMMI
         Unit Knight2 = new Unit(Knight2ATK,Knight2HP);
 
         battle(Knight1, Knight2);

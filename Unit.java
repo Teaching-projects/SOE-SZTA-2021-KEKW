@@ -15,18 +15,16 @@ public class Unit{
 
     
 
-    public Unit(int atk, int hp)
-    {
+    public Unit(int atk, int hp){
         this.atk=atk;
         this.hp=hp;
-        
     }
+    
     public Unit(){
         
     }
 
-    public boolean isAlive()
-    {    
+    public boolean isAlive(){    
         return (this.hp > 0) ;
     }
 
