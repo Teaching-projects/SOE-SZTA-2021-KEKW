@@ -1,14 +1,28 @@
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Unit{
-   
-    int atk;
+
+    @JsonProperty("name")
+    String name;
+    @JsonProperty("lore")
+    String lore;
+    @JsonProperty("health_points")
     int hp;
+    @JsonProperty("damage")
+    int atk;
+    @JsonProperty("attack_cooldown")
+    double atk_cd;
+
+    
 
     public Unit(int atk, int hp)
     {
         this.atk=atk;
         this.hp=hp;
+        
+    }
+    public Unit(){
+        
     }
 
     public boolean isAlive()
@@ -27,5 +41,8 @@ public class Unit{
     
     public int getAtk(){
         return this.isAlive() ? atk : 0;
+    }
+    public String getName(){
+        return this.name;
     }
 }

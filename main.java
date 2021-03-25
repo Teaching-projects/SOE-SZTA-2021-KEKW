@@ -1,12 +1,19 @@
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-
-import java.io.FileWriter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 class Main{
     
     public static void main(String[] args) {
+
+        if(args.length==2){
+        battle(JsonToUnit(args[0]), JsonToUnit(args[1]));           
+        }
+        
+        else{
         System.out.println("Give attack for Knigh1");
         int Knight1ATK=ReadLine();
         System.out.println("Now hp");
@@ -21,6 +28,7 @@ class Main{
         Unit Knight2 = new Unit(Knight2ATK,Knight2HP);
 
         battle(Knight1, Knight2);
+    }
     }
 
     public static void battle(Unit Knight1, Unit Knight2) {
@@ -37,10 +45,26 @@ class Main{
 
             i++;
         }
-        String winner = Knight1.isAlive() ? "Knight1 nyert" : "Knight2 nyert";
+        String winner = Knight1.isAlive() ? Knight1.getName() : Knight2.getName();
         System.out.println(winner);
     }
     public static int ReadLine (){
         return Integer.parseInt(System.console().readLine());
+    }
+    public static Unit JsonToUnit(String arg){
+
+        ObjectMapper objectMapper= new ObjectMapper();
+           
+        Unit unit=new Unit();
+
+            try{
+            unit = objectMapper.readValue(new File("./"+arg), Unit.class);
+            } catch (JsonProcessingException e){
+                System.out.println("JsonProcessingException");
+                System.out.println(e.getMessage());
+            } catch (IOException io){
+                System.out.println("fájlolvalási hiba");
+            } 
+            return unit;
     }
 }
