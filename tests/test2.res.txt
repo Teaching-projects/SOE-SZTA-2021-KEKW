@@ -1,6 +1,33 @@
-Exception in thread "main" java.lang.NumberFormatException: For input string: "z"
-        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-        at java.base/java.lang.Double.parseDouble(Double.java:556)
-        at Main.ReadLine(main.java:67)
-        at Main.main(main.java:6)
+150.0hp-ja van az első lovagnak, 10.0 sebzést tud okozni
+250.0hp-ja van az második lovagnak, 10.0 sebzést tud okozni
+1. kör
+Mindkét lovag megütötte egymást az első körben
+2. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 130.0 élete marad Knight1-nek
+3. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 120.0 élete marad Knight1-nek
+4. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 110.0 élete marad Knight1-nek
+5. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 100.0 élete marad Knight1-nek
+6. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 90.0 élete marad Knight1-nek
+7. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 80.0 élete marad Knight1-nek
+8. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 70.0 élete marad Knight1-nek
+9. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 60.0 élete marad Knight1-nek
+10. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 50.0 élete marad Knight1-nek
+11. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 40.0 élete marad Knight1-nek
+12. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 30.0 élete marad Knight1-nek
+13. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 20.0 élete marad Knight1-nek
+14. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 10.0 élete marad Knight1-nek
+15. kör
+Knight2 megtámadja Knight1: 10.0 sebzést okoz. 0.0 élete marad Knight1-nek
+Knight2 nyert
