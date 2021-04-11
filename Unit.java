@@ -12,16 +12,19 @@ public class Unit{
     int atk;
     @JsonProperty("attack_cooldown")
     double atk_cd;
+    double attackSpeed;
 
-    
 
-    public Unit(int atk, int hp){
+
+    public Unit(int atk, int hp, double attackSpeed)
+    {
         this.atk=atk;
         this.hp=hp;
+        this.attackSpeed = attackSpeed;
     }
     
     public Unit(){
-        
+        //ez kell a Json beolvasáshoz elvileg
     }
 
     public boolean isAlive(){    
@@ -29,18 +32,27 @@ public class Unit{
     }
 
     public void attack(Unit defender){
-
         defender.hp -= getAtk();
     }
 
-    public int getHealth(){
+    public double getHealth(){
         return hp;
     }
     
-    public int getAtk(){
+    public double getAtk(){
         return this.isAlive() ? atk : 0;
     }
+
     public String getName(){
         return this.name;
+
+
+    public double getAs(){
+        return attackSpeed;
+    }
+
+    public double setAs(double value){
+        return this.attackSpeed = value;
+
     }
 }
