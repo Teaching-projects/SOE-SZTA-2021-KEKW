@@ -1,0 +1,3 @@
+Knight1 megtámadja Knight2: 30.0 sebzést okoz. -40.0 élete marad Knight2-nek
+Knight2 megtámadja Knight1: 0.0 sebzést okoz. 10.0 élete marad Knight1-nek
+Knight1 nyert

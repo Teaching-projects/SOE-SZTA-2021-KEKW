@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.NumberFormatException: For input string: "z"
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:556)
+        at Main.ReadLine(main.java:67)
+        at Main.main(main.java:6)

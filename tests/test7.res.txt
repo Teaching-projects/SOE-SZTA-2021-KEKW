@@ -1,0 +1,103 @@
+50.0hp-ja van az első lovagnak, 1.0 sebzést tud okozni
+50.0hp-ja van az második lovagnak, 1.0 sebzést tud okozni
+1. kör
+Mindkét lovag megütötte egymást az első körben
+2. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 48.0 élete marad Knight1-nek
+3. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 47.0 élete marad Knight1-nek
+4. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 46.0 élete marad Knight1-nek
+5. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 45.0 élete marad Knight1-nek
+6. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 44.0 élete marad Knight1-nek
+7. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 43.0 élete marad Knight1-nek
+8. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 42.0 élete marad Knight1-nek
+9. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 41.0 élete marad Knight1-nek
+10. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 40.0 élete marad Knight1-nek
+11. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 39.0 élete marad Knight1-nek
+12. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 38.0 élete marad Knight1-nek
+13. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 37.0 élete marad Knight1-nek
+14. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 36.0 élete marad Knight1-nek
+15. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 35.0 élete marad Knight1-nek
+16. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 34.0 élete marad Knight1-nek
+17. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 33.0 élete marad Knight1-nek
+18. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 32.0 élete marad Knight1-nek
+19. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 31.0 élete marad Knight1-nek
+20. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 30.0 élete marad Knight1-nek
+21. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 29.0 élete marad Knight1-nek
+22. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 28.0 élete marad Knight1-nek
+23. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 27.0 élete marad Knight1-nek
+24. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 26.0 élete marad Knight1-nek
+25. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 25.0 élete marad Knight1-nek
+26. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 24.0 élete marad Knight1-nek
+27. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 23.0 élete marad Knight1-nek
+28. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 22.0 élete marad Knight1-nek
+29. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 21.0 élete marad Knight1-nek
+30. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 20.0 élete marad Knight1-nek
+31. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 19.0 élete marad Knight1-nek
+32. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 18.0 élete marad Knight1-nek
+33. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 17.0 élete marad Knight1-nek
+34. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 16.0 élete marad Knight1-nek
+35. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 15.0 élete marad Knight1-nek
+36. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 14.0 élete marad Knight1-nek
+37. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 13.0 élete marad Knight1-nek
+38. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 12.0 élete marad Knight1-nek
+39. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 11.0 élete marad Knight1-nek
+40. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 10.0 élete marad Knight1-nek
+41. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 9.0 élete marad Knight1-nek
+42. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 8.0 élete marad Knight1-nek
+43. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 7.0 élete marad Knight1-nek
+44. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 6.0 élete marad Knight1-nek
+45. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 5.0 élete marad Knight1-nek
+46. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 4.0 élete marad Knight1-nek
+47. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 3.0 élete marad Knight1-nek
+48. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 2.0 élete marad Knight1-nek
+49. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 1.0 élete marad Knight1-nek
+50. kör
+Knight2 megtámadja Knight1: 1.0 sebzést okoz. 0.0 élete marad Knight1-nek
+Knight2 nyert
