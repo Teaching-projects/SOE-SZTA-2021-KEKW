@@ -1,0 +1,17 @@
+on: push
+jobs:
+  Build_Project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: javac *.java
+  Run_Basic_IO_Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: javac *.java
+      - run: |
+            for test in `ls tests/*.txt`; do
+              java Main < $test > $test.gen
+              diff $test.gen $test.res
+            done

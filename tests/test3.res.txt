@@ -1,0 +1,8 @@
+100.0hp-ja van az első lovagnak, 100.0 sebzést tud okozni
+30.0hp-ja van az második lovagnak, 30.0 sebzést tud okozni
+1. kör
+Mindkét lovag megütötte egymást az első körben
+2. kör
+Knight1 megtámadja Knight2: 100.0 sebzést okoz. -170.0 élete marad Knight2-nek
+Knight2 megtámadja Knight1: 0.0 sebzést okoz. 100.0 élete marad Knight1-nek
+Knight1 nyert
