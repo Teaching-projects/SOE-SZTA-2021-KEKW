@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: javac *.java
-      - run: java Main < .github\workflow\test1.txt
-      - run: java Main < .github\workflow\test2.txt
-      - run: java Main < .github\workflow\test3.txt
-      - run: java Main < .github\workflow\test4.txt
+      - run: java Main < .github\workflows\test1.txt
+      - run: java Main < .github\workflows\test2.txt
+      - run: java Main < .github\workflows\test3.txt
+      - run: java Main < .github\workflows\test4.txt
 
   
