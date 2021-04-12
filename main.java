@@ -1,25 +1,31 @@
+import java.util.Scanner;
+
 class Main{
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         
         System.out.println("Give attack for Knigh1");
-        int Knight1ATK = (int) ReadLine();
+        int Knight1ATK =sc.nextInt();
         System.out.println("Now hp");
-        int Knight1HP = (int) ReadLine();
+        int Knight1HP = sc.nextInt();
         System.out.println("Now an attack speed");
-        double Knight1AttackSpeed = ReadLine();
+        double Knight1AttackSpeed = sc.nextFloat();
 
         System.out.println("Give attack for Knigh2");
-        int Knight2ATK = (int) ReadLine();
+        int Knight2ATK = sc.nextInt();
         System.out.println("Now hp");
-        int Knight2HP = (int) ReadLine();
+        int Knight2HP = sc.nextInt();
         System.out.println("Now an attack speed");
-        double Knight2AttackSpeed = ReadLine();
+        double Knight2AttackSpeed = sc.nextFloat();
+
 
         Unit Knight1 = new Unit(Knight1ATK, Knight1HP, Knight1AttackSpeed);
         Unit Knight2 = new Unit(Knight2ATK, Knight2HP, Knight2AttackSpeed);
 
-        battle(Knight1, Knight2);
+        sc.close();
+        battle(Knight1, Knight2); 
+        
     }
 
     public static void battle(Unit Knight1, Unit Knight2) {
@@ -63,7 +69,5 @@ class Main{
         String winner = Knight1.isAlive() ? "Knight1 nyert" : "Knight2 nyert";
         System.out.println(winner);
     }
-    public static double ReadLine (){
-        return Double.parseDouble(System.console().readLine());
-    }    
+
 }

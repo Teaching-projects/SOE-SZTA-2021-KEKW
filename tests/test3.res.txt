@@ -1,3 +1,9 @@
+Give attack for Knigh1
+Now hp
+Now an attack speed
+Give attack for Knigh2
+Now hp
+Now an attack speed
 100.0hp-ja van az első lovagnak, 100.0 sebzést tud okozni
 30.0hp-ja van az második lovagnak, 30.0 sebzést tud okozni
 1. kör
