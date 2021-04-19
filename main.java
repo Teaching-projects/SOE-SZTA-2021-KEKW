@@ -10,6 +10,18 @@ class Main{
 
 
         if(args.length==2){
+        //GUI TIME
+        JFrame frame = new JFrame("Battle GUI.ptsd");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300,300);
+        JButton K1Beolvasas_Button = new JButton("Knight1 fájl beolvas");
+        JButton K2Beolvasas_Button = new JButton("Knight2 fájl beolvas");
+        JButton Battle_Button = new JButton("Összecsapás");
+        frame.getContentPane().add(K1Beolvasas_Button);
+        frame.getContentPane().add(K2Beolvasas_Button);
+        frame.getContentPane().add(Battle_Button);
+        frame.setVisible(true); 
+
         battle(JsonToUnit(args[0]), JsonToUnit(args[1]));           
         }
        

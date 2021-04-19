@@ -45,7 +45,7 @@ public class Unit{
 
     public String getName(){
         return this.name;
-
+    }
 
     public double getAs(){
         return attackSpeed;
