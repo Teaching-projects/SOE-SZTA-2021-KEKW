@@ -15,8 +15,12 @@ public class Player_Unit extends Unit {
     @JsonProperty("cooldown_multiplier_per_level")
     float cd_mp_per_lvl;
 
-    public Player_Unit(int atk, int hp, double attackSpeed){
+    public Player_Unit(int atk, int hp, double attackSpeed, int xp_per_lvl, int dmg_increase_per_lvl, int hp_increase_per_lvl, float cooldown_multiplier_per_level){
         super( atk,  hp,  attackSpeed);
+        this.xp_per_lvl=xp_per_lvl;
+        this.dmg_per_lvl=dmg_increase_per_lvl;
+        this.hp_per_lvl=hp_increase_per_lvl;
+        this.cd_mp_per_lvl=cooldown_multiplier_per_level;
     }
 
     public Player_Unit(){
