@@ -52,7 +52,7 @@ public class Unit{
         return attackSpeed;
     }
 
-    public void setAs(double value){
+    protected void setAs(double value){
        attackSpeed = value;
     }
 }

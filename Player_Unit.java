@@ -30,23 +30,16 @@ public class Player_Unit extends Unit {
 
     public void lvl_up(){
         lvl+=1;
-        xp=xp+xp_per_lvl;
-        hp=hp+hp_per_lvl;
-        atk=atk+dmg_per_lvl;
-        atk_cd=atk_cd*cd_mp_per_lvl;
+        xp+=xp_per_lvl;
+        hp+=hp_per_lvl;
+        atk+=dmg_per_lvl;
+        atk_cd*=cd_mp_per_lvl;
     }
 
     public void attack(Unit defender){
         defender.hp -= getAtk();
-        dmg_inflicted += getAtk();
-        if(dmg_inflicted/dmg_required_to_lvlup>lvl){
-
-            int lvlup_number = (int) (dmg_inflicted/dmg_required_to_lvlup)-lvl;
-
-            for(int i=0; i<lvlup_number;i++){
-                lvl_up();
-            }        
-        }
-    
+        dmg_inflicted = (defender.isAlive()) ? getAtk() : defender.hp+getAtk();
+        int lvlup_number = (int) (dmg_inflicted/dmg_required_to_lvlup)-lvl;
+        for(int i=0; i<lvlup_number;i++) lvl_up();
     }
 }
