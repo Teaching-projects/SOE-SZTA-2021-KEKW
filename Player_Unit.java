@@ -38,7 +38,7 @@ public class Player_Unit extends Unit {
 
     public void attack(Unit defender){
         defender.hp -= getAtk();
-        dmg_inflicted = (defender.isAlive()) ? getAtk() : defender.hp+getAtk();
+        dmg_inflicted += (defender.isAlive()) ? getAtk() : defender.hp+getAtk();
         int lvlup_number = (int) (dmg_inflicted/dmg_required_to_lvlup)-lvl;
         for(int i=0; i<lvlup_number;i++) lvl_up();
     }
