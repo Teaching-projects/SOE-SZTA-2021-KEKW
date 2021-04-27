@@ -2,6 +2,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Player_Unit extends Unit {
 
+    int max_hp=hp;
     int lvl=0;
     int xp=0;
     double dmg_inflicted=0;
@@ -29,11 +30,12 @@ public class Player_Unit extends Unit {
     
 
     public void lvl_up(){
-        lvl+=1;
         xp+=xp_per_lvl;
-        hp+=hp_per_lvl;
+        max_hp+=hp_per_lvl;
+        hp=max_hp;
         atk+=dmg_per_lvl;
         atk_cd*=cd_mp_per_lvl;
+        lvl+=1;
     }
 
     public void attack(Unit defender){

@@ -112,8 +112,6 @@ class Main{
             return player_unit;
     }
 
-
-
     public static double ReadLine (){
         return Double.parseDouble(System.console().readLine());
     }    
