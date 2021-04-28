@@ -3,16 +3,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Unit{
 
     @JsonProperty("name")
-    String name;
+    protected String name;
     @JsonProperty("lore")
-    String lore;
+    protected String lore;
     @JsonProperty("health_points")
-    int hp;
+    protected int hp;
     @JsonProperty("damage")
-    int atk;
+    protected int atk;
     @JsonProperty("attack_cooldown")
-    double atk_cd;
-    double attackSpeed;
+    protected double atk_cd;
+    protected double attackSpeed;
 
 
 
@@ -28,7 +28,7 @@ public class Unit{
     }
 
     public boolean isAlive(){    
-        return (this.hp > 0) ;
+        return (hp > 0) ;
     }
 
     public void attack(Unit defender){
@@ -40,19 +40,19 @@ public class Unit{
     }
     
     public double getAtk(){
-        return this.isAlive() ? atk : 0;
+        return isAlive() ? atk : 0;
     }
 
     public String getName(){
-        return this.name;
+        return name;
+    }
 
 
     public double getAs(){
         return attackSpeed;
     }
 
-    public double setAs(double value){
-        return this.attackSpeed = value;
-
+    protected void setAs(double value){
+       attackSpeed = value;
     }
 }

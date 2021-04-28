@@ -95,6 +95,23 @@ class Main{
             return unit;
     }
 
+    public static Player_Unit JsonToPlayer_Unit(String arg){
+
+        ObjectMapper objectMapper= new ObjectMapper();
+           
+        Player_Unit player_unit=new Player_Unit();
+
+            try{
+            player_unit = objectMapper.readValue(new File("./"+arg), Unit.class);
+            } catch (JsonProcessingException e){
+                System.out.println("JsonProcessingException");
+                System.out.println(e.getMessage());
+            } catch (IOException io){
+                System.out.println("fájlolvalási hiba");
+            } 
+            return player_unit;
+    }
+
     public static double ReadLine (){
         return Double.parseDouble(System.console().readLine());
     }    
